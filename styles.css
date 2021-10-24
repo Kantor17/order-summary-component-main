@@ -62,19 +62,24 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
 }
 .plan-description {
    display: block;
    margin-left: 1rem;
 }
-.tile-plan h3 {
-    font-size: 18px;
+.plan-description h4 {
+    margin-bottom: 4px;
 }
 .change-button {
     color: var(--bright-blue);
     font-family: inherit;
+    font-size: 14px;
+}
+.change-button:hover {
+    opacity: 0.6;
+    text-decoration: none;
 }
 .button {
     font-family: inherit;
@@ -84,9 +89,19 @@ p {
     border-radius: 10px;
     cursor: pointer;
 }
+.button:hover {
+    opacity: 0.6;
+}
 .cancel {
     text-decoration: none;
+    color: var(--desaturated-blue);
+    width: fit-content;
+    margin: auto;
+    font-size: 14px;
+}
+.cancel:hover {
     color: var(--dark-blue);
+    font-weight: bold;
 }
 @media (max-width: 376px) {
     html {
